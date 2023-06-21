@@ -1,4 +1,5 @@
 import "./App.css";
+import "./avatar.png";
 
 function App() {
   return (
@@ -14,6 +15,11 @@ function App() {
         <a href="#">Contacts</a>
       </header>
       <main className="mainContentContainer">
+        <img
+          className="avatar"
+          src={require("./avatar.png")}
+          alt="Nasmi's avatar"
+        />
         <h1>Front-End React Developer 👋</h1>
         <p>
           Hi, I'm Nastya Smirnova. A Passionate Front-end React Developer based
