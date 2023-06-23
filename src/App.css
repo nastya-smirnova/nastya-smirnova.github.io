@@ -17,11 +17,50 @@
   color: rgb(0, 0, 0);
 }
 
+.greetContainer {
+  display: flex;
+  padding: 1rem;
+}
+
+.selfPresContainer {
+  padding-right: 3rem;
+  padding-left: 3rem;
+
+  text-align: start;
+}
+
+.socialIcon {
+  padding: 1rem;
+}
+
+.avatarContainer {
+  flex-wrap: wrap;
+}
+
 .avatar {
   display: flex;
   width: 200px;
   height: 200px;
   border-radius: 50%;
+}
+
+.socialMediaLinksContainer {
+  display: flex;
+}
+
+.aboutMeContainer {
+  display: flex;
+}
+
+.aboutMeImageContainer {
+  display: flex;
+  width: 50%;
+}
+
+.avoutMeTextContainer {
+  display: flex;
+  text-align: start;
+  display: column;
 }
 
 .footerContainer {
