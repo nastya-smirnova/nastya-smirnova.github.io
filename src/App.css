@@ -1,13 +1,47 @@
 .app {
   text-align: center;
+  width: 100%;
 }
 
 .headerContainer {
   flex-wrap: wrap;
-  padding: 1rem;
+  display: flex;
+  align-items: center;
 
-  background-color: #902890;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+  background-color: #9b789d;
   color: white;
+
+  position: relative;
+  height: 80px;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: start;
+  width: 30%;
+}
+
+.navigationLinksContainer {
+  display: flex;
+  justify-content: end;
+  width: 70%;
+}
+
+.navigationLinksContainer a {
+  margin: 20px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navigationLinksContainer a:hover {
+  margin: 20px;
+  color: #000000;
+  text-decoration: none;
 }
 
 .mainContentContainer {

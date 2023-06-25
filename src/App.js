@@ -8,14 +8,13 @@ function App() {
   return (
     <div className="app">
       <header className="headerContainer">
-        <h3>NaSmi.dev </h3>
-        <a href="#">Home</a>
-        <br />
-        <a href="#">About</a>
-        <br />
-        <a href="#">Projects</a>
-        <br />
-        <a href="#">Contacts</a>
+        <h3 className="logoContainer">NaSmi.dev </h3>
+        <div className="navigationLinksContainer">
+          <a href="#">Home </a>
+          <a href="#">About </a>
+          <a href="#">Projects </a>
+          <a href="#">Contacts </a>
+        </div>
       </header>
       <main className="mainContentContainer">
         <div className="greetContainer">
@@ -62,9 +61,9 @@ function App() {
         </div>
         <div>
           <p>Teck Stack</p>
-          <a href="#">JavaSkript</a>
-          <a href="#">CSS</a>
-          <a href="#">React</a>
+          <a href="#">JavaSkript </a>
+          <a href="#">CSS </a>
+          <a href="#">React </a>
         </div>
         <div className="aboutMeContainer">
           <img
