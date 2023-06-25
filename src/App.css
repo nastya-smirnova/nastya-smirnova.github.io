@@ -45,15 +45,22 @@
 }
 
 .mainContentContainer {
-  padding: 1rem;
+  padding-top: 5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 
-  background-color: #f5eded;
+  background-color: #ffffff;
   color: rgb(0, 0, 0);
 }
 
 .greetContainer {
   display: flex;
-  padding: 1rem;
+  margin: auto;
+  width: 60%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 4rem;
+  padding-bottom: 6rem;
 }
 
 .selfPresContainer {
@@ -61,10 +68,6 @@
   padding-left: 3rem;
 
   text-align: start;
-}
-
-.socialIcon {
-  padding: 1rem;
 }
 
 .avatarContainer {
@@ -76,30 +79,61 @@
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  border: 2px solid #9b789d;
 }
 
 .socialMediaLinksContainer {
   display: flex;
 }
 
+.socialMediaIcon {
+  font-size: 35px;
+  margin-right: 15px;
+  color: #4e3c4f;
+}
+
 .aboutMeContainer {
+  margin: auto;
+  width: 90%;
   display: flex;
+  padding: 1rem;
+  padding-top: 5rem;
 }
 
 .aboutMeImageContainer {
   display: flex;
-  width: 50%;
+  width: 40%;
+  height: 40%;
+  border-radius: 15%;
 }
 
-.avoutMeTextContainer {
-  display: flex;
-  text-align: start;
+.aboutMeTextContainer {
   display: column;
+  text-align: justify;
+  padding: 1rem;
+}
+
+.teckStackContainer {
+  justify-content: center;
+  padding: 1rem;
+  margin: 15px;
+}
+.teckStackContainer a {
+  display: inline-flex;
+  justify-content: center;
+  margin-top: 15px;
+  margin-left: 40px;
+  margin-right: 40px;
+
+  font-size: 50px;
+  text-decoration: none;
+  color: #9b789d;
 }
 
 .footerContainer {
+  height: 140px;
   padding: 1rem;
 
-  background-color: #d57f22;
+  background-color: #9b789d;
   color: white;
 }
