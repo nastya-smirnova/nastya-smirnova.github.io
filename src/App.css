@@ -17,7 +17,7 @@
   color: white;
 
   position: relative;
-  height: 80px;
+  height: 60px;
 }
 
 .logoContainer {
@@ -44,6 +44,7 @@
   text-decoration: none;
 }
 
+/* ________________MAIN CONTENT SECTION________________ */
 .mainContentContainer {
   padding-top: 5rem;
   padding-left: 1rem;
@@ -92,27 +93,6 @@
   color: #4e3c4f;
 }
 
-.aboutMeContainer {
-  margin: auto;
-  width: 90%;
-  display: flex;
-  padding: 1rem;
-  padding-top: 5rem;
-}
-
-.aboutMeImageContainer {
-  display: flex;
-  width: 40%;
-  height: 40%;
-  border-radius: 15%;
-}
-
-.aboutMeTextContainer {
-  display: column;
-  text-align: justify;
-  padding: 1rem;
-}
-
 .teckStackContainer {
   justify-content: center;
   padding: 1rem;
@@ -130,6 +110,105 @@
   color: #9b789d;
 }
 
+.aboutMeContainer {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  padding: 1rem;
+  padding-top: 5rem;
+}
+
+.aboutMeImageContainer {
+  display: flex;
+  width: 350px;
+  height: 250px;
+  border-radius: 5%;
+  border: 1px solid #3c3939;
+}
+
+.aboutMeHeaderText {
+  margin: 0px;
+  color: #e91e63;
+  text-transform: uppercase;
+}
+
+.aboutMeTextContainer {
+  display: column;
+  text-align: justify;
+  padding-left: 3rem;
+}
+
+.portfolioHeader {
+  display: flex;
+  text-transform: uppercase;
+  color: #e91e63;
+  padding-left: 3rem;
+}
+
+.portfolioTitle {
+  display: flex;
+  padding-left: 3rem;
+}
+
+.portfolioContainer {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  padding: 1rem;
+}
+
+.portfolioImageContainer {
+  display: flex;
+  width: 350px;
+  height: 250px;
+  border-radius: 5%;
+  border: 1px solid #3c3939;
+}
+
+.projectDescriptionText {
+  display: flex;
+  text-transform: uppercase;
+  margin: 0px;
+  justify-content: center;
+}
+
+.projectDescriptionTextContainer {
+  display: column;
+  text-align: justify;
+  padding-left: 3rem;
+}
+
+.usedToolsContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.usedTools {
+  display: flex;
+  font-size: 25px;
+  margin: 10px;
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.buttonsPreviewProject {
+  display: flex;
+  border: 2px solid #000000;
+
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.buttonsPreviewProject:hover {
+  background-color: #e91e63;
+  color: #fff;
+}
+
+/* ________________FOOTER CONTENT SECTION________________ */
 .footerContainer {
   height: 140px;
   padding: 1rem;

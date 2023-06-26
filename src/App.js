@@ -1,5 +1,6 @@
 import "./App.css";
 import "./avatar.png";
+import "./galleryApp.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCss3Alt,
@@ -11,6 +12,13 @@ import {
   faReact,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import {
+  faCoffee,
+  faExternalLink,
+  faExternalLinkSquareAlt,
+  faLink,
+  faLinkSlash,
+} from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   return (
@@ -89,43 +97,69 @@ function App() {
             alt="Nasmi's avatar"
           />
           <div className="aboutMeTextContainer">
-            <h3>About Me</h3>
-            <h3>A dedicated front-end Developer based in Ukraine 📍</h3>
+            <h3 className="aboutMeHeaderText">About Me</h3>
+            <h4>A dedicated front-end Developer based in Ukraine 📍</h4>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
               type and scrambled it to make a type specimen book. It has
               survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+              electronic typesetting, remaining essentially unchanged. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged.
             </p>
           </div>
         </div>
-        <div className="portfolioContainer">
-          <h3>Portfolio</h3>
-          <h3>Each project is unique piece of development 🧩 </h3>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
-          </p>
+        <div>
+          <h3 className="portfolioHeader">Portfolio</h3>
+          <h4 className="portfolioTitle ">
+            Each project is unique piece of development 🧩{" "}
+          </h4>
+          <div className="portfolioContainer">
+            <img
+              className="portfolioImageContainer"
+              src={require("./galleryApp.png")}
+              alt="Gallery App preview"
+            />
+            <div className="projectDescriptionTextContainer">
+              <h4 className="projectDescriptionText"> Gallery App 🎞 </h4>
+              <p>
+                🎞 A Gallery App is a digital tool designed to add, organize,
+                view images, and delete your pictures or photographs.
+                <ul>
+                  <h4>Key Features:</h4>
+                  <li>Add your favourite image using the link </li>
+                  <li>Look through your images using Lightbox</li>
+                  <li>Delete remove irrelevant pictures from your gallery </li>
+                  <li>Can be used both on PC and mobile devices</li>
+                </ul>
+              </p>
+              <div className="usedToolsContainer">
+                <FontAwesomeIcon className="usedTools" icon={faReact} />
+                <FontAwesomeIcon className="usedTools" icon={faJsSquare} />
+                <FontAwesomeIcon className="usedTools" icon={faCss3Alt} />
+                <FontAwesomeIcon className="usedTools" icon={faHtml5} />
+              </div>
+              <div className="buttonsContainer">
+                <button className="buttonsPreviewProject">
+                  Code <FontAwesomeIcon icon={faGithub} />
+                </button>
+                <button className="buttonsPreviewProject">
+                  Live Demo <FontAwesomeIcon icon={faExternalLink} />
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
       <footer className="footerContainer">
         <p>Contact</p>
         <p>Don't be shy! Hit me up!🤝</p>
         <p>Email, GitHub</p>
-        <p>Buy me a coffee</p>
+        <p>
+          Buy me a coffee <FontAwesomeIcon icon={faCoffee} />
+        </p>
       </footer>
     </div>
   );
