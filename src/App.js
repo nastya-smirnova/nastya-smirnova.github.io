@@ -13,15 +13,10 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import {
-  faCoffee,
   faExternalLink,
-  faExternalLinkSquareAlt,
-  faFileMedicalAlt,
-  faLink,
-  faLinkSlash,
-  faMailBulk,
   faMailForward,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const App = () => {
   const openInNewTab = (url) => {
@@ -33,13 +28,34 @@ const App = () => {
       <header className="headerContainer">
         <h3 className="logoContainer">NaSmi.dev </h3>
         <div className="navigationLinksContainer">
-          <a href="#">Home </a>
-          <a href="#">About </a>
-          <a href="#">Projects </a>
-          <a href="#">Contacts </a>
+          <nav>
+            <ul>
+              <li>
+                <Link activeClass="active" smooth spy to="home">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link activeClass="active" smooth spy to="about">
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link activeClass="active" smooth spy to="projects">
+                  Projects
+                </Link>
+              </li>
+              <li>
+                <Link activeClass="active" smooth spy to="contacts">
+                  Contacts
+                </Link>
+              </li>
+            </ul>
+          </nav>
         </div>
       </header>
       <main className="mainContentContainer">
+        <section id="home"></section>
         <div className="greetContainer">
           <div className="avatarContainer">
             <img
@@ -98,6 +114,7 @@ const App = () => {
           </a>
         </div>
         <div className="aboutMeContainer">
+          <section id="about"></section>
           <img
             className="aboutMeImageContainer"
             src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
@@ -119,6 +136,7 @@ const App = () => {
           </div>
         </div>
         <div>
+          <section id="projects"></section>
           <h3 className="portfolioHeader">Portfolio</h3>
           <h4 className="portfolioTitle ">
             Each project is unique piece of development 🧩{" "}
@@ -179,6 +197,7 @@ const App = () => {
         </div>
       </main>
       <footer className="footerContainer">
+        <section id="contacts"></section>
         <p className="contactsHeader">Contacts</p>
         <p className="dontBeShyText">Don't be shy! Hit me up!🤝</p>
         <a
