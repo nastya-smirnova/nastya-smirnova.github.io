@@ -132,6 +132,7 @@
 .aboutMeHeaderText {
   margin: 0px;
   color: #e91e63;
+  font-weight: 800;
   text-transform: uppercase;
 }
 
@@ -143,6 +144,8 @@
 
 .portfolioHeader {
   display: flex;
+
+  font-weight: 800;
   text-transform: uppercase;
   color: #e91e63;
   padding-left: 3rem;
@@ -216,9 +219,33 @@
 
 /* ________________FOOTER CONTENT SECTION________________ */
 .footerContainer {
-  height: 140px;
+  height: 160px;
+  margin-top: 2rem;
   padding: 1rem;
 
   background-color: #9b789d;
   color: white;
+}
+
+.contactsHeader {
+  display: flex;
+  padding-left: 2rem;
+
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: medium;
+  font-weight: 800;
+}
+
+.dontBeShyText {
+  display: flex;
+  padding-left: 2rem;
+}
+
+.email {
+  display: flex;
+  padding-left: 2rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: #ffffff;
 }

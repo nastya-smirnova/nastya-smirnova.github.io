@@ -16,8 +16,11 @@ import {
   faCoffee,
   faExternalLink,
   faExternalLinkSquareAlt,
+  faFileMedicalAlt,
   faLink,
   faLinkSlash,
+  faMailBulk,
+  faMailForward,
 } from "@fortawesome/free-solid-svg-icons";
 
 const App = () => {
@@ -176,12 +179,17 @@ const App = () => {
         </div>
       </main>
       <footer className="footerContainer">
-        <p>Contact</p>
-        <p>Don't be shy! Hit me up!🤝</p>
-        <p>Email, GitHub</p>
-        <p>
-          Buy me a coffee <FontAwesomeIcon icon={faCoffee} />
-        </p>
+        <p className="contactsHeader">Contacts</p>
+        <p className="dontBeShyText">Don't be shy! Hit me up!🤝</p>
+        <a
+          href="mailto:smirnova.anastasia.k@gmail.com?cc=smirnowa.anastasiia@gmail.com&subject=Email to Anastasia"
+          target="_blank"
+          className="email"
+        >
+          smirnova.anastasia.k@gmail.com{" "}
+          <FontAwesomeIcon icon={faMailForward} />
+        </a>
+        <p>Anastasia Smirnova © 1998 - 2023</p>
       </footer>
     </div>
   );
