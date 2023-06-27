@@ -20,7 +20,11 @@ import {
   faLinkSlash,
 } from "@fortawesome/free-solid-svg-icons";
 
-function App() {
+const App = () => {
+  const openInNewTab = (url) => {
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
+
   return (
     <div className="app">
       <header className="headerContainer">
@@ -142,12 +146,30 @@ function App() {
                 <FontAwesomeIcon className="usedTools" icon={faHtml5} />
               </div>
               <div className="buttonsContainer">
-                <button className="buttonsPreviewProject">
-                  Code <FontAwesomeIcon icon={faGithub} />
-                </button>
-                <button className="buttonsPreviewProject">
-                  Live Demo <FontAwesomeIcon icon={faExternalLink} />
-                </button>
+                <div>
+                  <button
+                    className="buttonsPreviewProject"
+                    onClick={() =>
+                      openInNewTab(
+                        "https://github.com/nastya-smirnova/gallery-app"
+                      )
+                    }
+                  >
+                    Code <FontAwesomeIcon icon={faGithub} />
+                  </button>
+                </div>
+                <div>
+                  <button
+                    className="buttonsPreviewProject"
+                    onClick={() =>
+                      openInNewTab(
+                        "https://github.com/nastya-smirnova/gallery-app#readme"
+                      )
+                    }
+                  >
+                    Live Demo <FontAwesomeIcon icon={faExternalLink} />
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -163,6 +185,6 @@ function App() {
       </footer>
     </div>
   );
-}
+};
 
 export default App;
