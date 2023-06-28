@@ -71,25 +71,22 @@ const App = () => {
             </p>
             <div className="socialMediaLinksContainer">
               <a
-                className="socialMediaIcon"
+                className="linkedin"
                 href="https://www.linkedin.com/in/anastasia-smirnova-9b8931205/"
               >
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
-              <a
-                className="socialMediaIcon"
-                href="https://twitter.com/NaSmi10346751"
-              >
+              <a className="twitter" href="https://twitter.com/NaSmi10346751">
                 <FontAwesomeIcon icon={faTwitter} />
               </a>
               <a
-                className="socialMediaIcon"
+                className="gitHub"
                 href="https://github.com/nastya-smirnova?tab=overview&from=2023-06-01&to=2023-06-21"
               >
                 <FontAwesomeIcon icon={faGithub} />
               </a>
               <a
-                className="socialMediaIcon"
+                className="instagram"
                 href="https://www.instagram.com/nasmi__nasmi/"
               >
                 <FontAwesomeIcon icon={faInstagram} />

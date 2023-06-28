@@ -95,12 +95,52 @@
 
 .socialMediaLinksContainer {
   display: flex;
-}
-
-.socialMediaIcon {
   font-size: 35px;
   margin-right: 15px;
   color: #4e3c4f;
+}
+
+.linkedin {
+  color: #0072b1;
+  margin-right: 15px;
+}
+
+.linkedin:hover {
+  font-size: 35px;
+  margin-right: 15px;
+  color: #e4405f;
+}
+
+.twitter {
+  color: #00acee;
+  margin-right: 15px;
+}
+.twitter:hover {
+  font-size: 35px;
+  margin-right: 15px;
+  color: #171515;
+}
+
+.gitHub {
+  color: #171515;
+  margin-right: 15px;
+}
+
+.gitHub:hover {
+  font-size: 35px;
+  margin-right: 15px;
+  color: #00acee;
+}
+
+.instagram {
+  color: #e4405f;
+  margin-right: 15px;
+}
+
+.instagram:hover {
+  font-size: 35px;
+  margin-right: 15px;
+  color: #0072b1;
 }
 
 .teckStackContainer {
