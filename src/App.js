@@ -16,7 +16,8 @@ import {
   faExternalLink,
   faMailForward,
 } from "@fortawesome/free-solid-svg-icons";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
+import "./MediaQuery.css";
 
 const App = () => {
   const openInNewTab = (url) => {
