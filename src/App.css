@@ -41,13 +41,13 @@
 }
 
 .navigationLinksContainer li {
-  margin-left: 25px;
+  margin-left: 2rem;
   color: #ffffff;
   font-weight: 800;
 }
 
 .navigationLinksContainer li:hover {
-  margin-left: 25px;
+  margin-left: 2rem;
   color: #4b3a4a;
   font-weight: 800;
   text-decoration: none;
