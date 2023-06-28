@@ -1,6 +1,7 @@
 .app {
   text-align: center;
   width: 100%;
+  font-family: "Roboto", regular;
 }
 
 .headerContainer {
@@ -31,16 +32,25 @@
   justify-content: end;
   width: 70%;
 }
-
-.navigationLinksContainer a {
-  margin: 20px;
+.navigationLinksContainer ul {
+  display: flex;
   color: #ffffff;
   text-decoration: none;
+  list-style-type: none;
+  justify-content: end;
 }
 
-.navigationLinksContainer a:hover {
-  margin: 20px;
-  color: #000000;
+.navigationLinksContainer li {
+  margin-left: 25px;
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.navigationLinksContainer li:hover {
+  margin-left: 25px;
+  color: #4b3a4a;
+  font-weight: 800;
+  text-decoration: none;
   text-decoration: none;
 }
 

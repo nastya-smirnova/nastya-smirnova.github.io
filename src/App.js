@@ -27,32 +27,31 @@ const App = () => {
     <div className="app">
       <header className="headerContainer">
         <h3 className="logoContainer">NaSmi.dev </h3>
-        <div className="navigationLinksContainer">
-          <nav>
-            <ul>
-              <li>
-                <Link activeClass="active" smooth spy to="home">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link activeClass="active" smooth spy to="about">
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link activeClass="active" smooth spy to="projects">
-                  Projects
-                </Link>
-              </li>
-              <li>
-                <Link activeClass="active" smooth spy to="contacts">
-                  Contacts
-                </Link>
-              </li>
-            </ul>
-          </nav>
-        </div>
+
+        <nav className="navigationLinksContainer">
+          <ul>
+            <li>
+              <Link activeClass="active" smooth spy to="home">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link activeClass="active" smooth spy to="about">
+                About
+              </Link>
+            </li>
+            <li>
+              <Link activeClass="active" smooth spy to="projects">
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link activeClass="active" smooth spy to="contacts">
+                Contacts
+              </Link>
+            </li>
+          </ul>
+        </nav>
       </header>
       <main className="mainContentContainer">
         <section id="home"></section>
