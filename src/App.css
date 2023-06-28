@@ -2,6 +2,27 @@
   text-align: center;
   width: 100%;
   font-family: "Roboto", regular;
+
+  --header-footer-background-color: #9b789d;
+  --logo-color: #ffffff;
+  --navigation-links-color: #ffffff;
+  --navigation-links-hover-color: #4b3a4a;
+
+  --images-border-color: 1px solid #565555;
+
+  --teckStack-ikons-color: #9b789d;
+
+  --header-text-color: #e91e63;
+  --header-text-transform: uppercase;
+  --header-font-weight: 800;
+
+  --sections-background-color: rgb(243, 240, 245);
+
+  --preview-buttons-border: 2px solid #000000;
+  --preview-buttons-background-hover-color: #e91e63;
+  --preview-buttons-color: #ffffff;
+
+  --footer-text-color: #ffffff;
 }
 
 .headerContainer {
@@ -14,8 +35,7 @@
   padding-left: 2rem;
   padding-right: 2rem;
 
-  background-color: #9b789d;
-  color: white;
+  background-color: var(--header-footer-background-color);
 
   position: relative;
   height: 60px;
@@ -25,6 +45,7 @@
   display: flex;
   justify-content: start;
   width: 30%;
+  color: var(--logo-color);
 }
 
 .navigationLinksContainer {
@@ -34,7 +55,7 @@
 }
 .navigationLinksContainer ul {
   display: flex;
-  color: #ffffff;
+  color: var(--navigation-links-color);
   text-decoration: none;
   list-style-type: none;
   justify-content: end;
@@ -42,13 +63,12 @@
 
 .navigationLinksContainer li {
   margin-left: 2rem;
-  color: #ffffff;
   font-weight: 800;
 }
 
 .navigationLinksContainer li:hover {
   margin-left: 2rem;
-  color: #4b3a4a;
+  color: var(--navigation-links-hover-color);
   font-weight: 800;
   text-decoration: none;
   text-decoration: none;
@@ -61,13 +81,12 @@
   padding-right: 1rem;
 
   background-color: #ffffff;
-  color: rgb(0, 0, 0);
 }
 
 .greetContainer {
   display: flex;
   margin: auto;
-  width: 60%;
+  width: 70%;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 4rem;
@@ -90,7 +109,7 @@
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  border: 2px solid #9b789d;
+  border: var(--images-border-color);
 }
 
 .socialMediaLinksContainer {
@@ -158,7 +177,7 @@
 
   font-size: 50px;
   text-decoration: none;
-  color: #9b789d;
+  color: var(--teckStack-ikons-color);
 }
 
 .aboutMeContainer {
@@ -167,7 +186,7 @@
   display: flex;
   padding: 1rem;
   padding-top: 1rem;
-  background-color: rgb(243, 240, 245);
+  background-color: var(--sections-background-color);
   border-radius: 15px;
 }
 
@@ -176,14 +195,14 @@
   width: 350px;
   height: 250px;
   border-radius: 5%;
-  border: 1px solid #3c3939;
+  border: var(--images-border-color);
 }
 
 .aboutMeHeaderText {
   margin: 0px;
-  color: #e91e63;
-  font-weight: 800;
-  text-transform: uppercase;
+  text-transform: var(--header-text-transform);
+  color: var(--header-text-color);
+  font-weight: var(--header-font-weight);
 }
 
 .aboutMeTextContainer {
@@ -195,9 +214,9 @@
 .portfolioHeader {
   display: flex;
 
-  font-weight: 800;
-  text-transform: uppercase;
-  color: #e91e63;
+  text-transform: var(--header-text-transform);
+  color: var(--header-text-color);
+  font-weight: var(--header-font-weight);
   padding-left: 3rem;
   padding-top: 1rem;
 }
@@ -212,7 +231,7 @@
   width: 90%;
   display: flex;
   padding: 1rem;
-  background-color: rgb(243, 240, 245);
+  background-color: var(--sections-background-color);
   border-radius: 15px;
 }
 
@@ -221,7 +240,7 @@
   width: 350px;
   height: 250px;
   border-radius: 5%;
-  border: 1px solid #3c3939;
+  border: var(--images-border-color);
 }
 
 .projectDescriptionText {
@@ -255,7 +274,7 @@
 
 .buttonsPreviewProject {
   display: flex;
-  border: 2px solid #000000;
+  border: var(--preview-buttons-border);
 
   border-radius: 10px;
   padding: 10px;
@@ -263,8 +282,8 @@
 }
 
 .buttonsPreviewProject:hover {
-  background-color: #e91e63;
-  color: #fff;
+  background-color: var(--preview-buttons-background-hover-color);
+  color: var(--preview-buttons-color);
 }
 
 /* ________________FOOTER CONTENT SECTION________________ */
@@ -273,18 +292,18 @@
   margin-top: 2rem;
   padding: 1rem;
 
-  background-color: #9b789d;
-  color: white;
+  background-color: var(--header-footer-background-color);
+  color: var(--footer-text-color);
 }
 
 .contactsHeader {
   display: flex;
   padding-left: 2rem;
 
-  text-transform: uppercase;
-  color: #ffffff;
+  text-transform: var(--header-text-transform);
+  color: var(--footer-text-color);
   font-size: medium;
-  font-weight: 800;
+  font-weight: var(--header-font-weight);
 }
 
 .dontBeShyText {
@@ -296,6 +315,6 @@
   display: flex;
   padding-left: 2rem;
   text-decoration: none;
-  font-weight: 600;
-  color: #ffffff;
+  font-weight: 800;
+  color: var(--footer-text-color);
 }

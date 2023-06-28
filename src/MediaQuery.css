@@ -1,0 +1,8 @@
+/* Maximum width */
+@media (max-width: 512px) {
+  .app {
+    text-align: center;
+    width: 100%;
+    font-family: "Roboto", regular;
+  }
+}
