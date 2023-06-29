@@ -4,5 +4,227 @@
     text-align: center;
     font-family: "Roboto", regular;
     color: rgb(24, 10, 225);
+    width: 100%;
+  }
+
+  .headerContainer {
+    height: 100px;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .logoContainer {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navigationLinksContainer {
+    justify-content: center;
+  }
+
+  /* ________________MAIN CONTENT SECTION________________ */
+  .mainContentContainer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .greetContainer {
+    flex-direction: column;
+    width: 100%;
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .selfPresContainer {
+    justify-content: center;
+    padding-right: 3rem;
+    padding-left: 3rem;
+
+    text-align: start;
+  }
+
+  .avatarContainer {
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+  }
+
+  .avatar {
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: var(--images-border-color);
+  }
+
+  .socialMediaLinksContainer {
+    display: flex;
+    font-size: 35px;
+    margin-right: 15px;
+    color: #4e3c4f;
+  }
+
+  .teckStackContainer {
+    justify-content: center;
+    padding: 1rem;
+    padding-bottom: 5rem;
+    margin: 15px;
+  }
+  .teckStackContainer a {
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+    font-size: 50px;
+    text-decoration: none;
+    color: var(--teckStack-ikons-color);
+  }
+
+  .aboutMeContainer {
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+    padding-top: 1rem;
+    background-color: var(--sections-background-color);
+    border-radius: 15px;
+  }
+
+  .aboutMeImageContainer {
+    flex-direction: column;
+    /* display: flex; */
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+    border: var(--images-border-color);
+  }
+
+  .aboutMeHeaderText {
+    margin: 0px;
+    text-transform: var(--header-text-transform);
+    color: var(--header-text-color);
+    font-weight: var(--header-font-weight);
+  }
+
+  .aboutMeTextContainer {
+    display: column;
+    text-align: justify;
+    padding-left: 3rem;
+  }
+
+  .portfolioHeader {
+    flex-direction: column;
+
+    display: flex;
+
+    text-transform: var(--header-text-transform);
+    color: var(--header-text-color);
+    font-weight: var(--header-font-weight);
+    padding-left: 3rem;
+    padding-top: 1rem;
+  }
+
+  .portfolioTitle {
+    display: flex;
+    padding-left: 3rem;
+  }
+
+  .portfolioContainer {
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+    background-color: var(--sections-background-color);
+    border-radius: 15px;
+  }
+
+  .portfolioImageContainer {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+    border: var(--images-border-color);
+  }
+
+  .projectDescriptionText {
+    display: flex;
+    text-transform: uppercase;
+    margin: 0px;
+    justify-content: center;
+  }
+
+  .projectDescriptionTextContainer {
+    display: column;
+    text-align: justify;
+    padding-left: 3rem;
+  }
+
+  .usedToolsContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .usedTools {
+    display: flex;
+    font-size: 25px;
+    margin: 10px;
+  }
+
+  .buttonsContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .buttonsPreviewProject {
+    display: flex;
+    border: var(--preview-buttons-border);
+
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+  }
+
+  .buttonsPreviewProject:hover {
+    background-color: var(--preview-buttons-background-hover-color);
+    color: var(--preview-buttons-color);
+  }
+
+  /* ________________FOOTER CONTENT SECTION________________ */
+  .footerContainer {
+    height: 160px;
+    margin-top: 2rem;
+    padding: 1rem;
+
+    background-color: var(--header-footer-background-color);
+    color: var(--footer-text-color);
+  }
+
+  .contactsHeader {
+    display: flex;
+    padding-left: 2rem;
+
+    text-transform: var(--header-text-transform);
+    color: var(--footer-text-color);
+    font-size: medium;
+    font-weight: var(--header-font-weight);
+  }
+
+  .dontBeShyText {
+    display: flex;
+    padding-left: 2rem;
+  }
+
+  .email {
+    display: flex;
+    padding-left: 2rem;
+    text-decoration: none;
+    font-weight: 800;
+    color: var(--footer-text-color);
   }
 }
