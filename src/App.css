@@ -152,12 +152,10 @@
 
 .instagram {
   color: #e4405f;
-  margin-right: 15px;
 }
 
 .instagram:hover {
   font-size: 35px;
-  margin-right: 15px;
   color: #0072b1;
 }
 
@@ -242,7 +240,7 @@
   border: var(--images-border-color);
 }
 
-.projectDescriptionText {
+.projectHeaderText {
   display: flex;
   text-transform: uppercase;
   margin: 0px;

@@ -3,7 +3,6 @@
   .app {
     text-align: center;
     font-family: "Roboto", regular;
-    color: rgb(24, 10, 225);
     width: 100%;
   }
 
@@ -65,9 +64,9 @@
   }
 
   .socialMediaLinksContainer {
+    justify-content: center;
     display: flex;
     font-size: 35px;
-    /* margin-right: 10px; */
   }
 
   .teckStackContainer {
@@ -85,7 +84,6 @@
 
     font-size: 40px;
     text-decoration: none;
-    color: var(--teckStack-ikons-color);
   }
 
   .aboutMeContainer {
@@ -101,7 +99,6 @@
     width: 100%;
     height: 100%;
     border-radius: 5%;
-    border: var(--images-border-color);
   }
 
   .aboutMeHeaderText {
@@ -112,6 +109,7 @@
     display: column;
     text-align: justify;
     padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .portfolioHeader {
@@ -123,7 +121,7 @@
 
   .portfolioTitle {
     display: flex;
-    /* padding-left: 3rem; */
+    justify-content: flex-start;
   }
 
   .portfolioContainer {
@@ -140,81 +138,34 @@
     width: 100%;
     height: 100%;
     border-radius: 5%;
-    border: var(--images-border-color);
   }
 
-  .projectDescriptionText {
-    display: flex;
-    text-transform: uppercase;
-    margin: 0px;
+  .projectHeaderText {
+    padding-top: 1rem;
     justify-content: center;
   }
 
   .projectDescriptionTextContainer {
-    display: column;
-    text-align: justify;
     padding-left: 1rem;
-  }
-
-  .usedToolsContainer {
-    display: flex;
-    justify-content: center;
-  }
-
-  .usedTools {
-    display: flex;
-    font-size: 25px;
-    margin: 10px;
-  }
-
-  .buttonsContainer {
-    display: flex;
-    justify-content: center;
-  }
-
-  .buttonsPreviewProject {
-    display: flex;
-    border: var(--preview-buttons-border);
-
-    border-radius: 10px;
-    padding: 10px;
-    margin: 5px;
-  }
-
-  .buttonsPreviewProject:hover {
-    background-color: var(--preview-buttons-background-hover-color);
-    color: var(--preview-buttons-color);
+    padding-right: 1rem;
   }
 
   /* ________________FOOTER CONTENT SECTION________________ */
   .footerContainer {
     height: 160px;
-    margin-top: 2rem;
+    margin-top: 1rem;
     padding: 1rem;
 
     width: 100%;
   }
 
-  .contactsHeader {
-    display: flex;
-    padding-left: 2rem;
-
-    text-transform: var(--header-text-transform);
-    color: var(--footer-text-color);
-    font-size: medium;
-    font-weight: var(--header-font-weight);
-  }
-
   .dontBeShyText {
-    display: flex;
-    padding-left: 2rem;
+    padding-left: 1rem;
   }
 
   .email {
-    display: flex;
-    padding-left: 2rem;
+    padding-left: 1rem;
     text-decoration: none;
     font-weight: 800;
-    color: var(--footer-text-color);
   }
 }

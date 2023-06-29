@@ -145,7 +145,7 @@ const App = () => {
               alt="Gallery App preview"
             />
             <div className="projectDescriptionTextContainer">
-              <h4 className="projectDescriptionText"> Gallery App 🎞 </h4>
+              <h4 className="projectHeaderText"> Gallery App 🎞 </h4>
               <p>
                 🎞 A Gallery App is a digital tool designed to add, organize,
                 view images, and delete your pictures or photographs.
