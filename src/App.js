@@ -65,8 +65,8 @@ const App = () => {
             />
           </div>
           <div className="selfPresContainer">
-            <h1>Front-End React Developer 👋</h1>
-            <p>
+            <h1 className="headerGreeting">Front-End React Developer 👋</h1>
+            <p className="textGreeting">
               Hi, I'm Nastya Smirnova. A Passionate Front-end React Developer
               based in Ukraine 📍
             </p>
