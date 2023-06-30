@@ -96,17 +96,17 @@ const App = () => {
           </div>
         </div>
         <div className="teckStackContainer">
-          <h3>Teck Stack</h3>
-          <a href="#">
+          <h3 className="teckStackHeader">Teck Stack</h3>
+          <a href="https://www.javascript.com/">
             <FontAwesomeIcon icon={faJsSquare} />
           </a>
-          <a href="#">
+          <a href="https://www.w3.org/Style/CSS/Overview.en.html">
             <FontAwesomeIcon icon={faCss3Alt} />
           </a>
-          <a href="#">
+          <a href="https://html5.org/">
             <FontAwesomeIcon icon={faHtml5} />
           </a>
-          <a href="#">
+          <a href="https://react.dev/">
             <FontAwesomeIcon icon={faReact} />
           </a>
         </div>
@@ -135,7 +135,7 @@ const App = () => {
         <div>
           <section id="projects"></section>
           <h3 className="portfolioHeader">Portfolio</h3>
-          <h4 className="portfolioTitle ">
+          <h4 className="portfolioTitle">
             Each project is unique piece of development 🧩{" "}
           </h4>
           <div className="portfolioContainer">

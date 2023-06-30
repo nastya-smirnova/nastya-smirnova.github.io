@@ -85,6 +85,10 @@
     width: 100%;
   }
 
+  .teckStackHeader {
+    margin: 5px;
+  }
+
   .teckStackContainer a {
     display: inline-flex;
     justify-content: center;
@@ -131,8 +135,8 @@
   }
 
   .portfolioTitle {
-    display: flex;
-    justify-content: flex-start;
+    text-align: justify;
+    padding-left: 1rem;
   }
 
   .portfolioContainer {
@@ -165,20 +169,27 @@
 
   /* ________________FOOTER CONTENT SECTION________________ */
   .footerContainer {
-    height: 160px;
-    margin-top: 1rem;
+    text-align: center;
+    justify-content: center;
+    height: 150px;
     padding: 1rem;
 
     width: 100%;
   }
 
+  .contactsHeader {
+    justify-content: center;
+    padding-left: 0rem;
+  }
   .dontBeShyText {
-    padding-left: 1rem;
+    justify-content: center;
+    padding-left: 0rem;
   }
 
   .email {
-    padding-left: 1rem;
+    justify-content: center;
     text-decoration: none;
     font-weight: 800;
+    padding-left: 0rem;
   }
 }

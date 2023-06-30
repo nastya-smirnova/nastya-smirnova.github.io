@@ -315,3 +315,7 @@
   font-weight: 800;
   color: var(--footer-text-color);
 }
+
+.email:hover {
+  color: #e91e63;
+}
