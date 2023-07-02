@@ -10,6 +10,7 @@ import {
   faJsSquare,
   faLinkedin,
   faReact,
+  faTiktok,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import {
@@ -91,6 +92,12 @@ const App = () => {
                 href="https://www.instagram.com/nasmi__nasmi/"
               >
                 <FontAwesomeIcon icon={faInstagram} />
+              </a>
+              <a
+                className="tiktok"
+                href="https://www.tiktok.com/@nasmi__nasmi?_d=secCgYIASAHKAESPgo8W3mGzGV%2B1gntbYnS0doE1b206D92A1CV106gf%2FydyW6GHqjrvfSpUO51VsFYCVTwfiEdJoDJNL4L1hYoGgA%3D&_r=1&checksum=8c0079746f00fe1cb49fbdd2dcf4457b8cd49e5486cc469955ca9088bdbf6fad&language=en&sec_uid=MS4wLj"
+              >
+                <FontAwesomeIcon icon={faTiktok} />
               </a>
             </div>
           </div>
@@ -205,7 +212,7 @@ const App = () => {
           smirnova.anastasia.k@gmail.com{" "}
           <FontAwesomeIcon icon={faMailForward} />
         </a>
-        <p>Anastasia Smirnova © 1998 - 2023</p>
+        <p className="copyrightText">Anastasia Smirnova © 1998 - 2023</p>
       </footer>
     </div>
   );
