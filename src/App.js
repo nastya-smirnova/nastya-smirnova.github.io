@@ -32,22 +32,22 @@ const App = () => {
 
         <nav className="navigationLinksContainer">
           <ul>
-            <li>
+            <li className="navigationHover">
               <Link activeClass="active" smooth spy to="home">
                 Home
               </Link>
             </li>
-            <li>
+            <li className="navigationHover">
               <Link activeClass="active" smooth spy to="about">
                 About
               </Link>
             </li>
-            <li>
+            <li className="navigationHover">
               <Link activeClass="active" smooth spy to="projects">
                 Projects
               </Link>
             </li>
-            <li>
+            <li className="navigationHover">
               <Link activeClass="active" smooth spy to="contacts">
                 Contacts
               </Link>
