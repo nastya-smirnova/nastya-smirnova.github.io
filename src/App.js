@@ -128,14 +128,14 @@ const App = () => {
             <h3 className="aboutMeHeaderText">About Me</h3>
             <h4>A dedicated front-end Developer based in Ukraine 📍</h4>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged.
+              As a Junior Front-End Developer, I possess an impressive arsenal
+              of skills in HTML, CSS, JavaScript and React. I excel in designing
+              and maintaining responsive websites that offer a smooth user
+              experience. My expertise lies in crafting dynamic, engaging
+              interfaces through writing clean and optimized code and utilizing
+              cutting-edge development tools and techniques. I am also a team
+              player who thrives in collaborating with cross-functional teams to
+              produce outstanding web applications.
             </p>
           </div>
         </div>
