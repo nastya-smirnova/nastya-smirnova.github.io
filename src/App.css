@@ -327,6 +327,7 @@
 .contactsHeader {
   display: flex;
   padding-left: 2rem;
+  margin-bottom: 5px;
 
   text-transform: var(--header-text-transform);
   color: var(--footer-text-color);
