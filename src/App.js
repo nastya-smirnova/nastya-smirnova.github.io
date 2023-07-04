@@ -17,6 +17,8 @@ import {
 import {
   faExternalLink,
   faMailForward,
+  faPaperPlane,
+  faPlane,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-scroll";
 import "./MediaQuery.css";
@@ -181,7 +183,7 @@ const App = () => {
                       )
                     }
                   >
-                    Code <FontAwesomeIcon icon={faGithub} />
+                    Code &nbsp; <FontAwesomeIcon icon={faGithub} />
                   </button>
                 </div>
                 <div>
@@ -193,7 +195,7 @@ const App = () => {
                       )
                     }
                   >
-                    Live Demo <FontAwesomeIcon icon={faExternalLink} />
+                    Live Demo &nbsp; <FontAwesomeIcon icon={faExternalLink} />
                   </button>
                 </div>
               </div>
@@ -230,7 +232,7 @@ const App = () => {
                         )
                       }
                     >
-                      Code <FontAwesomeIcon icon={faGithub} />
+                      Code &nbsp; <FontAwesomeIcon icon={faGithub} />
                     </button>
                   </div>
                   <div>
@@ -242,7 +244,7 @@ const App = () => {
                         )
                       }
                     >
-                      Live Demo <FontAwesomeIcon icon={faExternalLink} />
+                      Live Demo &nbsp; <FontAwesomeIcon icon={faExternalLink} />
                     </button>
                   </div>
                 </div>
@@ -260,8 +262,8 @@ const App = () => {
           target="_blank"
           className="email"
         >
-          smirnova.anastasia.k@gmail.com{" "}
-          <FontAwesomeIcon icon={faMailForward} />
+          smirnova.anastasia.k@gmail.com &nbsp;
+          <FontAwesomeIcon icon={faPaperPlane} />
         </a>
         <p className="copyrightText">Anastasia Smirnova © 1998 - 2023</p>
       </footer>
