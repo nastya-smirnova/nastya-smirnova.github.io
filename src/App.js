@@ -1,6 +1,7 @@
 import "./App.css";
 import "./avatar.png";
 import "./galleryApp.png";
+import "./landingPage.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCss3Alt,
@@ -194,6 +195,56 @@ const App = () => {
                   >
                     Live Demo <FontAwesomeIcon icon={faExternalLink} />
                   </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <section id="projects"></section>
+            <div className="portfolioContainer">
+              <img
+                className="portfolioImageContainer"
+                src={require("./landingPage.png")}
+                alt="Landing Page preview"
+              />
+              <div className="projectDescriptionTextContainer">
+                <h4 className="projectHeaderText"> Landing Page 🛩 </h4>
+                <p>
+                  🛩 A landing page is the webpage visitors land on immediately
+                  after clicking links in: email marketing campaigns, search
+                  engine results, social media advertisements.
+                </p>
+                <div className="usedToolsContainer">
+                  <FontAwesomeIcon className="usedTools" icon={faReact} />
+                  <FontAwesomeIcon className="usedTools" icon={faJsSquare} />
+                  <FontAwesomeIcon className="usedTools" icon={faCss3Alt} />
+                  <FontAwesomeIcon className="usedTools" icon={faHtml5} />
+                </div>
+                <div className="buttonsContainer">
+                  <div>
+                    <button
+                      className="buttonsPreviewProject"
+                      onClick={() =>
+                        openInNewTab(
+                          "https://github.com/nastya-smirnova/landing-page-app"
+                        )
+                      }
+                    >
+                      Code <FontAwesomeIcon icon={faGithub} />
+                    </button>
+                  </div>
+                  <div>
+                    <button
+                      className="buttonsPreviewProject"
+                      onClick={() =>
+                        openInNewTab(
+                          "https://github.com/nastya-smirnova/landing-page-app#readme"
+                        )
+                      }
+                    >
+                      Live Demo <FontAwesomeIcon icon={faExternalLink} />
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>

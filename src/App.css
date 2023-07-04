@@ -254,6 +254,8 @@
   display: flex;
   padding: 1rem;
   padding-right: 2rem;
+  margin: 1rem;
+
   background-color: var(--sections-background-color);
   border-radius: 15px;
 }
