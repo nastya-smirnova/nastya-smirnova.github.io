@@ -16,9 +16,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faExternalLink,
-  faMailForward,
   faPaperPlane,
-  faPlane,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-scroll";
 import "./MediaQuery.css";
