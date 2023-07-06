@@ -197,3 +197,13 @@
     flex-direction: column;
   }
 }
+
+@media (max-width: 425px) {
+  .avatarContainer {
+    align-items: center;
+  }
+
+  .avatar {
+    width: 70%;
+  }
+}
