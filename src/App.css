@@ -3,14 +3,14 @@
   width: 100%;
   font-family: "Roboto", regular;
 
-  --header-footer-background-color: #b9a010;
+  --header-footer-background-color: #1f4681;
   --logo-color: #ffffff;
   --navigation-links-color: #ffffff;
   --navigation-links-hover-color: #000000;
 
   --images-border-color: 1px solid #212022;
 
-  --teckStack-ikons-color: #8b7b22;
+  --teckStack-ikons-color: #1f4681;
 
   --header-text-color: #e91e63;
   /* #e91e63 */
@@ -32,10 +32,10 @@
   --tiktok-color: #000000;
   --tiktok-hover-color: #d52f2f;
 
-  --sections-background-color: #f9f8f1;
+  --sections-background-color: #f6f7fb;
 
   --preview-buttons-border: 2px solid #000000;
-  --preview-buttons-background-hover-color: #8b7b22;
+  --preview-buttons-background-hover-color: #1f4681;
   --preview-buttons-color: #ffffff;
 
   --footer-text-color: #ffffff;
