@@ -39,7 +39,7 @@
   --preview-buttons-color: #ffffff;
 
   --footer-text-color: #ffffff;
-  --email-hover-color: #000000;
+  --email-hover-color: #d4ebf7;
 }
 
 .headerContainer {
@@ -365,6 +365,7 @@
 
 .email:hover {
   color: var(--email-hover-color);
+  text-decoration: underline;
 }
 
 .copyrightText {
