@@ -20,7 +20,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-scroll";
 
-import avatar from "./public/images/avatar.png";
+import avatar from "./images/avatar.png";
+import galleryAppImg from "./images/galleryApp.png";
+import landingPageImg from "./images/landingPage.png";
 
 import "./MediaQuery.css";
 
@@ -147,7 +149,7 @@ const App = () => {
           <div className="portfolioContainer">
             <img
               className="portfolioImageContainer"
-              src={require("./galleryApp.png")}
+              src={galleryAppImg}
               alt="Gallery App preview"
             />
             <div className="projectDescriptionTextContainer">
@@ -201,7 +203,7 @@ const App = () => {
             <div className="portfolioContainer" id="projects">
               <img
                 className="portfolioImageContainer"
-                src={require("./landingPage.png")}
+                src={landingPageImg}
                 alt="Landing Page preview"
               />
               <div className="projectDescriptionTextContainer">
