@@ -47,10 +47,12 @@
   display: flex;
   align-items: center;
 
-  padding-top: 1rem;
+  /* padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 2rem;
-  padding-right: 2rem;
+  padding-right: 2rem; */
+
+  padding: 1rem 2rem;
 
   background-color: var(--header-footer-background-color);
 
@@ -88,7 +90,6 @@
   color: var(--navigation-links-hover-color);
   font-weight: 800;
   text-decoration: none;
-  text-decoration: none;
 }
 
 .navigationHover {
@@ -98,6 +99,7 @@
   margin: 0 -0.25rem;
   transition: color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
 }
+
 .navigationHover:hover {
   color: var(--navigation-links-hover-color);
   box-shadow: inset 200px 0 0 0 #ffffff;
@@ -106,8 +108,8 @@
 /* ________________MAIN CONTENT SECTION________________ */
 .mainContentContainer {
   padding-top: 5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
 
   background-color: #ffffff;
 }
@@ -161,6 +163,7 @@
   color: var(--twitter-color);
   margin-right: 15px;
 }
+
 .twitter:hover {
   font-size: 35px;
   margin-right: 15px;
@@ -221,9 +224,11 @@
   margin: auto;
   width: 90%;
   display: flex;
-  padding: 1rem;
   padding-right: 2rem;
   padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  margin-bottom: 5rem;
   background-color: var(--sections-background-color);
   border-radius: 15px;
 }
@@ -334,6 +339,7 @@
   height: 160px;
   margin-top: 2rem;
   padding: 1rem;
+  padding-left: 3rem;
 
   background-color: var(--header-footer-background-color);
   color: var(--footer-text-color);

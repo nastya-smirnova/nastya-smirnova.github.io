@@ -19,17 +19,22 @@ import {
   faPaperPlane,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-scroll";
+
+import avatar from "./public/images/avatar.png";
+
 import "./MediaQuery.css";
 
 const App = () => {
   const openInNewTab = (url) => {
     window.open(url, "_blank", "noopener,noreferrer");
+
+    console.log(new Date().getFullYear());
   };
 
   return (
     <div className="app">
       <header className="headerContainer">
-        <h3 className="logoContainer">NaSmi.dev </h3>
+        <h3 className="logoContainer">NaSmi.dev</h3>
 
         <nav className="navigationLinksContainer">
           <ul>
@@ -56,15 +61,10 @@ const App = () => {
           </ul>
         </nav>
       </header>
-      <main className="mainContentContainer">
-        <section id="home"></section>
+      <main className="mainContentContainer" id="home">
         <div className="greetContainer">
           <div className="avatarContainer">
-            <img
-              className="avatar"
-              src={require("./avatar.png")}
-              alt="Nasmi's avatar"
-            />
+            <img className="avatar" src={avatar} alt="Nasmi's avatar" />
           </div>
           <div className="selfPresContainer">
             <h1 className="headerGreeting">Front-End React Developer 👋</h1>
@@ -118,15 +118,14 @@ const App = () => {
             <FontAwesomeIcon icon={faReact} />
           </a>
         </div>
-        <div className="aboutMeContainer">
-          <section id="about"></section>
+        <div className="aboutMeContainer" id="about">
           <img
             className="aboutMeImageContainer"
             src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
             alt="Nasmi's avatar"
           />
           <div className="aboutMeTextContainer">
-            <h3 className="aboutMeHeaderText">About Me</h3>
+            <h2 className="aboutMeHeaderText">About Me</h2>
             <h4>A dedicated front-end Developer based in Ukraine 📍</h4>
             <p>
               As a Junior Front-End Developer, I possess an impressive arsenal
@@ -140,11 +139,10 @@ const App = () => {
             </p>
           </div>
         </div>
-        <div>
-          <section id="projects"></section>
-          <h3 className="portfolioHeader">Portfolio</h3>
+        <div id="projects">
+          <h2 className="portfolioHeader">Portfolio</h2>
           <h4 className="portfolioTitle">
-            Each project is unique piece of development 🧩{" "}
+            Each project is unique piece of development 🧩
           </h4>
           <div className="portfolioContainer">
             <img
@@ -153,7 +151,7 @@ const App = () => {
               alt="Gallery App preview"
             />
             <div className="projectDescriptionTextContainer">
-              <h4 className="projectHeaderText"> Gallery App 🎞 </h4>
+              <h4 className="projectHeaderText">Gallery App 🎞</h4>
               <p>
                 🎞 A Gallery App is a digital tool designed to add, organize,
                 view images, and delete your pictures or photographs.
@@ -200,8 +198,7 @@ const App = () => {
             </div>
           </div>
           <div>
-            <section id="projects"></section>
-            <div className="portfolioContainer">
+            <div className="portfolioContainer" id="projects">
               <img
                 className="portfolioImageContainer"
                 src={require("./landingPage.png")}
@@ -251,8 +248,7 @@ const App = () => {
           </div>
         </div>
       </main>
-      <footer className="footerContainer">
-        <section id="contacts"></section>
+      <footer className="footerContainer" id="contacts">
         <p className="contactsHeader">Contacts</p>
         <p className="dontBeShyText">Don't be shy! Hit me up!🤝</p>
         <a
@@ -263,7 +259,9 @@ const App = () => {
           smirnova.anastasia.k@gmail.com &nbsp;
           <FontAwesomeIcon icon={faPaperPlane} />
         </a>
-        <p className="copyrightText">Anastasia Smirnova © 1998 - 2023</p>
+        <p className="copyrightText">
+          Anastasia Smirnova &copy; 1998 - {new Date().getFullYear()}
+        </p>
       </footer>
     </div>
   );
