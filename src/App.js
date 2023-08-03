@@ -1,7 +1,5 @@
 import "./App.css";
-import "./avatar.png";
-import "./galleryApp.png";
-import "./landingPage.png";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCss3Alt,
@@ -18,55 +16,29 @@ import {
   faExternalLink,
   faPaperPlane,
 } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-scroll";
 
-import avatar from "./images/avatar.png";
+import avatarImg from "./images/avatar.png";
 import galleryAppImg from "./images/galleryApp.png";
 import landingPageImg from "./images/landingPage.png";
+import workspaceImg from "./images/workspace.png";
 
 import "./MediaQuery.css";
+import UsedTools from "./components/UsedTools";
+import SocialMediaLinks from "./components/SocialMediaLinks";
+
+import Header from "./components/Header";
 
 const App = () => {
-  const openInNewTab = (url) => {
-    window.open(url, "_blank", "noopener,noreferrer");
-
-    console.log(new Date().getFullYear());
-  };
+  console.log(new Date().getFullYear());
 
   return (
     <div className="app">
-      <header className="headerContainer">
-        <h3 className="logoContainer">NaSmi.dev</h3>
+      <Header />
 
-        <nav className="navigationLinksContainer">
-          <ul>
-            <li className="navigationHover">
-              <Link activeClass="active" smooth spy to="home">
-                Home
-              </Link>
-            </li>
-            <li className="navigationHover">
-              <Link activeClass="active" smooth spy to="about">
-                About
-              </Link>
-            </li>
-            <li className="navigationHover">
-              <Link activeClass="active" smooth spy to="projects">
-                Projects
-              </Link>
-            </li>
-            <li className="navigationHover">
-              <Link activeClass="active" smooth spy to="contacts">
-                Contacts
-              </Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
       <main className="mainContentContainer" id="home">
         <div className="greetContainer">
           <div className="avatarContainer">
-            <img className="avatar" src={avatar} alt="Nasmi's avatar" />
+            <img className="avatar" src={avatarImg} alt="Nasmi's avatar" />
           </div>
           <div className="selfPresContainer">
             <h1 className="headerGreeting">Front-End React Developer 👋</h1>
@@ -74,35 +46,7 @@ const App = () => {
               Hi, I'm Nastya Smirnova. A Passionate Front-end React Developer
               based in Ukraine 📍
             </p>
-            <div className="socialMediaLinksContainer">
-              <a
-                className="linkedin"
-                href="https://www.linkedin.com/in/anastasia-smirnova-9b8931205/"
-              >
-                <FontAwesomeIcon icon={faLinkedin} />
-              </a>
-              <a className="twitter" href="https://twitter.com/NaSmi10346751">
-                <FontAwesomeIcon icon={faTwitter} />
-              </a>
-              <a
-                className="gitHub"
-                href="https://github.com/nastya-smirnova?tab=overview&from=2023-06-01&to=2023-06-21"
-              >
-                <FontAwesomeIcon icon={faGithub} />
-              </a>
-              <a
-                className="instagram"
-                href="https://www.instagram.com/nasmi__nasmi/"
-              >
-                <FontAwesomeIcon icon={faInstagram} />
-              </a>
-              <a
-                className="tiktok"
-                href="https://www.tiktok.com/@nasmi__nasmi?_d=secCgYIASAHKAESPgo8W3mGzGV%2B1gntbYnS0doE1b206D92A1CV106gf%2FydyW6GHqjrvfSpUO51VsFYCVTwfiEdJoDJNL4L1hYoGgA%3D&_r=1&checksum=8c0079746f00fe1cb49fbdd2dcf4457b8cd49e5486cc469955ca9088bdbf6fad&language=en&sec_uid=MS4wLj"
-              >
-                <FontAwesomeIcon icon={faTiktok} />
-              </a>
-            </div>
+            <SocialMediaLinks />
           </div>
         </div>
         <div className="teckStackContainer">
@@ -123,7 +67,7 @@ const App = () => {
         <div className="aboutMeContainer" id="about">
           <img
             className="aboutMeImageContainer"
-            src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+            src={workspaceImg}
             alt="Nasmi's avatar"
           />
           <div className="aboutMeTextContainer">
@@ -165,37 +109,24 @@ const App = () => {
                   <li>Can be used both on PC and mobile devices</li>
                 </ul>
               </p>
-              <div className="usedToolsContainer">
-                <FontAwesomeIcon className="usedTools" icon={faReact} />
-                <FontAwesomeIcon className="usedTools" icon={faJsSquare} />
-                <FontAwesomeIcon className="usedTools" icon={faCss3Alt} />
-                <FontAwesomeIcon className="usedTools" icon={faHtml5} />
-              </div>
+              <UsedTools />
+
               <div className="buttonsContainer">
-                <div>
-                  <button
-                    className="buttonsPreviewProject"
-                    onClick={() =>
-                      openInNewTab(
-                        "https://github.com/nastya-smirnova/gallery-app"
-                      )
-                    }
-                  >
-                    Code &nbsp; <FontAwesomeIcon icon={faGithub} />
-                  </button>
-                </div>
-                <div>
-                  <button
-                    className="buttonsPreviewProject"
-                    onClick={() =>
-                      openInNewTab(
-                        "https://github.com/nastya-smirnova/gallery-app#readme"
-                      )
-                    }
-                  >
-                    Live Demo &nbsp; <FontAwesomeIcon icon={faExternalLink} />
-                  </button>
-                </div>
+                <a
+                  href="https://github.com/nastya-smirnova/gallery-app"
+                  target="_blank"
+                  className="buttonsPreviewProject"
+                >
+                  Code &nbsp; <FontAwesomeIcon icon={faGithub} />
+                </a>
+
+                <a
+                  href="https://github.com/nastya-smirnova/gallery-app"
+                  target="_blank"
+                  className="buttonsPreviewProject"
+                >
+                  Live Demo &nbsp; <FontAwesomeIcon icon={faExternalLink} />
+                </a>
               </div>
             </div>
           </div>
@@ -213,36 +144,26 @@ const App = () => {
                   after clicking links in: email marketing campaigns, search
                   engine results, social media advertisements.
                 </p>
-                <div className="usedToolsContainer">
-                  <FontAwesomeIcon className="usedTools" icon={faReact} />
-                  <FontAwesomeIcon className="usedTools" icon={faJsSquare} />
-                  <FontAwesomeIcon className="usedTools" icon={faCss3Alt} />
-                  <FontAwesomeIcon className="usedTools" icon={faHtml5} />
-                </div>
+                <UsedTools />
+
                 <div className="buttonsContainer">
                   <div>
-                    <button
+                    <a
+                      href="https://github.com/nastya-smirnova/landing-page-app"
+                      target="_blank"
                       className="buttonsPreviewProject"
-                      onClick={() =>
-                        openInNewTab(
-                          "https://github.com/nastya-smirnova/landing-page-app"
-                        )
-                      }
                     >
                       Code &nbsp; <FontAwesomeIcon icon={faGithub} />
-                    </button>
+                    </a>
                   </div>
                   <div>
-                    <button
+                    <a
+                      href="https://github.com/nastya-smirnova/landing-page-app#readme"
+                      target="_blank"
                       className="buttonsPreviewProject"
-                      onClick={() =>
-                        openInNewTab(
-                          "https://github.com/nastya-smirnova/landing-page-app#readme"
-                        )
-                      }
                     >
                       Live Demo &nbsp; <FontAwesomeIcon icon={faExternalLink} />
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>

@@ -42,6 +42,10 @@
   --email-hover-color: #d4ebf7;
 }
 
+::selection {
+  background: rgb(246, 209, 244);
+}
+
 .headerContainer {
   flex-wrap: wrap;
   display: flex;
@@ -157,6 +161,7 @@
   font-size: 35px;
   margin-right: 15px;
   color: var(--linkedin-hover-color);
+  cursor: pointer;
 }
 
 .twitter {
@@ -168,6 +173,7 @@
   font-size: 35px;
   margin-right: 15px;
   color: var(--twitter-hover-color);
+  cursor: pointer;
 }
 
 .gitHub {
@@ -179,6 +185,7 @@
   font-size: 35px;
   margin-right: 15px;
   color: var(--github-hover-color);
+  cursor: pointer;
 }
 
 .instagram {
@@ -190,6 +197,7 @@
   font-size: 35px;
   margin-right: 15px;
   color: var(--instagram-hover-color);
+  cursor: pointer;
 }
 
 .tiktok {
@@ -200,6 +208,7 @@
 .tiktok:hover {
   font-size: 35px;
   color: var(--tiktok-hover-color);
+  cursor: pointer;
 }
 
 .teckStackContainer {
@@ -218,6 +227,7 @@
   font-size: 50px;
   text-decoration: none;
   color: var(--teckStack-ikons-color);
+  cursor: pointer;
 }
 
 .aboutMeContainer {
@@ -302,15 +312,20 @@
   padding-left: 3rem;
 }
 
-.usedToolsContainer {
+.usedToolsContainer ul {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  list-style-type: none;
+  margin-left: -55px;
 }
 
 .usedTools {
   display: flex;
+
   font-size: 25px;
-  margin: 10px;
+  margin-left: 20px;
+  margin-top: 1rem;
 }
 
 .buttonsContainer {
@@ -321,15 +336,18 @@
 .buttonsPreviewProject {
   display: flex;
   border: var(--preview-buttons-border);
+  text-decoration: none;
+  color: #000000;
 
-  border-radius: 10px;
-  padding: 10px;
+  border-radius: 12px;
+  padding: 8px;
   margin: 5px;
 }
 
 .buttonsPreviewProject:hover {
   background-color: var(--preview-buttons-background-hover-color);
   color: var(--preview-buttons-color);
+  cursor: pointer;
 }
 
 /* ________________FOOTER CONTENT SECTION________________ */
