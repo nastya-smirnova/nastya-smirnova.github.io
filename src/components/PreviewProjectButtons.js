@@ -1,12 +1,15 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
 
-export const PreviewProjectButtons = () => {
+export const PreviewProjectButtons = ({ codeUrl, previewUrl }) => {
   return (
-    <div>
+    <>
       <div className="buttonsContainer">
         <a
-          // href={src}
-          href="https://github.com/nastya-smirnova/gallery-app"
+          href={codeUrl}
+          // href="https://github.com/nastya-smirnova/gallery-app"
           target="_blank"
           className="buttonsPreviewProject"
         >
@@ -14,15 +17,15 @@ export const PreviewProjectButtons = () => {
         </a>
 
         <a
-          // href={src}
-          href="https://github.com/nastya-smirnova/gallery-app"
+          href={previewUrl}
+          // href="https://github.com/nastya-smirnova/gallery-app"
           target="_blank"
           className="buttonsPreviewProject"
         >
           Live Demo &nbsp; <FontAwesomeIcon icon={faExternalLink} />
         </a>
       </div>
-    </div>
+    </>
   );
 };
 

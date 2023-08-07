@@ -47,7 +47,7 @@
   background: rgb(246, 209, 244);
 }
 
-/* .headerContainer {
+.headerContainer {
   flex-wrap: wrap;
   display: flex;
   align-items: center;
@@ -103,7 +103,7 @@
 .navigationHover:hover {
   color: var(--navigation-links-hover-color);
   box-shadow: inset 200px 0 0 0 #ffffff;
-} */
+}
 
 /* ________________MAIN CONTENT SECTION________________ */
 .mainContentContainer {

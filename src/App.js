@@ -1,17 +1,13 @@
 import "./App.css";
 import "./MediaQuery.css";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
-
 import galleryAppImg from "./images/galleryApp.png";
 import landingPageImg from "./images/landingPage.png";
 
 import UsedTools from "./components/UsedTools";
 
 import Header from "./components/Header";
-// import PreviewProjectButtons from "./components/PreviewProjectButtons";
+import PreviewProjectButtons from "./components/PreviewProjectButtons";
 import ContactInfo from "./components/ContactInfo";
 import AboutMe from "./components/AboutMe";
 import TeckStack from "./components/TeckStack";
@@ -52,24 +48,10 @@ const App = () => {
                 </ul>
               </p>
               <UsedTools />
-
-              <div className="buttonsContainer">
-                <a
-                  href="https://github.com/nastya-smirnova/gallery-app"
-                  target="_blank"
-                  className="buttonsPreviewProject"
-                >
-                  Code &nbsp; <FontAwesomeIcon icon={faGithub} />
-                </a>
-
-                <a
-                  href="https://github.com/nastya-smirnova/gallery-app"
-                  target="_blank"
-                  className="buttonsPreviewProject"
-                >
-                  Live Demo &nbsp; <FontAwesomeIcon icon={faExternalLink} />
-                </a>
-              </div>
+              <PreviewProjectButtons
+                codeUrl={"https://github.com/nastya-smirnova/gallery-app"}
+                previewUrl={"https://github.com/nastya-smirnova/gallery-app"}
+              />
             </div>
           </div>
           <div>
@@ -89,24 +71,14 @@ const App = () => {
                 <UsedTools />
 
                 <div className="buttonsContainer">
-                  <div>
-                    <a
-                      href="https://github.com/nastya-smirnova/landing-page-app"
-                      target="_blank"
-                      className="buttonsPreviewProject"
-                    >
-                      Code &nbsp; <FontAwesomeIcon icon={faGithub} />
-                    </a>
-                  </div>
-                  <div>
-                    <a
-                      href="https://github.com/nastya-smirnova/landing-page-app#readme"
-                      target="_blank"
-                      className="buttonsPreviewProject"
-                    >
-                      Live Demo &nbsp; <FontAwesomeIcon icon={faExternalLink} />
-                    </a>
-                  </div>
+                  <PreviewProjectButtons
+                    codeUrl={
+                      "https://github.com/nastya-smirnova/landing-page-app"
+                    }
+                    previewUrl={
+                      "https://github.com/nastya-smirnova/landing-page-app#readme"
+                    }
+                  />
                 </div>
               </div>
             </div>
