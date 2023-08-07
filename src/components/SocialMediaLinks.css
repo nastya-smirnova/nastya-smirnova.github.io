@@ -1,0 +1,64 @@
+.socialMediaLinksContainer {
+  display: flex;
+  font-size: 35px;
+  margin-right: 15px;
+}
+
+.linkedin {
+  color: var(--linkedin-color);
+  margin-right: 15px;
+}
+
+.linkedin:hover {
+  font-size: 35px;
+  margin-right: 15px;
+  color: var(--linkedin-hover-color);
+  cursor: pointer;
+}
+
+.twitter {
+  color: var(--twitter-color);
+  margin-right: 15px;
+}
+
+.twitter:hover {
+  font-size: 35px;
+  margin-right: 15px;
+  color: var(--twitter-hover-color);
+  cursor: pointer;
+}
+
+.gitHub {
+  color: var(--github-color);
+  margin-right: 15px;
+}
+
+.gitHub:hover {
+  font-size: 35px;
+  margin-right: 15px;
+  color: var(--github-hover-color);
+  cursor: pointer;
+}
+
+.instagram {
+  color: var(--instagram-color);
+  margin-right: 15px;
+}
+
+.instagram:hover {
+  font-size: 35px;
+  margin-right: 15px;
+  color: var(--instagram-hover-color);
+  cursor: pointer;
+}
+
+.tiktok {
+  font-size: 35px;
+  color: var(--tiktok-color);
+}
+
+.tiktok:hover {
+  font-size: 35px;
+  color: var(--tiktok-hover-color);
+  cursor: pointer;
+}

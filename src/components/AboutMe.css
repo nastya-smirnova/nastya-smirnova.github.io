@@ -1,0 +1,33 @@
+.aboutMeContainer {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  margin-bottom: 5rem;
+  background-color: var(--sections-background-color);
+  border-radius: 15px;
+}
+
+.aboutMeImageContainer {
+  display: flex;
+  width: 350px;
+  height: 250px;
+  border-radius: 5%;
+  border: var(--images-border-color);
+}
+
+.aboutMeHeaderText {
+  margin: 0px;
+  text-transform: var(--header-text-transform);
+  color: var(--header-text-color);
+  font-weight: var(--header-font-weight);
+}
+
+.aboutMeTextContainer {
+  display: column;
+  text-align: justify;
+  padding-left: 3rem;
+}

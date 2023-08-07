@@ -1,16 +1,13 @@
 import React from "react";
 import {
-  faCss3Alt,
   faGithub,
-  faHtml5,
   faInstagram,
-  faJsSquare,
   faLinkedin,
-  faReact,
   faTiktok,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "../components/SocialMediaLinks.css";
 
 export const SocialMediaLinks = () => {
   return (

@@ -5,6 +5,7 @@ export const PreviewProjectButtons = () => {
     <div>
       <div className="buttonsContainer">
         <a
+          // href={src}
           href="https://github.com/nastya-smirnova/gallery-app"
           target="_blank"
           className="buttonsPreviewProject"
@@ -13,6 +14,7 @@ export const PreviewProjectButtons = () => {
         </a>
 
         <a
+          // href={src}
           href="https://github.com/nastya-smirnova/gallery-app"
           target="_blank"
           className="buttonsPreviewProject"
