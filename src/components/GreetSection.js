@@ -1,6 +1,7 @@
 import React from "react";
 import avatarImg from "../images/avatar.png";
 import SocialMediaLinks from "./SocialMediaLinks";
+import TeckStack from "./TeckStack";
 
 export const GreetSection = () => {
   return (

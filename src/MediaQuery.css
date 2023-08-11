@@ -1,223 +1,71 @@
 /* Maximum width */
-@media (max-width: 512px) {
+@media (max-width: 768px) {
   .app {
     text-align: center;
     font-family: "Roboto", regular;
-    width: 100%;
-  }
-
-  .headerContainer {
-    flex-wrap: wrap;
-    height: 100px;
-    padding: 1rem;
-    width: 100%;
-  }
-
-  .logoContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .navigationLinksContainer {
-    justify-content: center;
-    align-items: center;
-    padding-left: 1rem;
-    padding-right: 1rem;
   }
 
   /* ________________MAIN CONTENT SECTION________________ */
+  .appMainContent {
+    display: flex;
+    justify-content: center;
+  }
+
   .mainContentContainer {
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    display: flex;
+
+    justify-content: center;
+    flex-direction: column;
   }
 
   .greetContainer {
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 1rem;
 
-    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 
   .selfPresContainer {
     justify-content: center;
-    padding-right: 1rem;
-    padding-left: 1rem;
-
     text-align: center;
+    margin-left: 0rem;
   }
 
   .headerGreeting {
-    font-size: large;
+    font-size: larger;
   }
 
   .textGreeting {
-    width: 100%;
-    font-size: small;
+    font-size: medium;
   }
 
   .avatarContainer {
-    flex-direction: column;
     justify-content: center;
-    display: flex;
   }
 
   .avatar {
-    justify-content: center;
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
   }
 
   .socialMediaLinksContainer {
-    justify-content: center;
     display: flex;
+    justify-content: center;
     font-size: 35px;
     margin: 10px;
-  }
-
-  .teckStackContainer {
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin-top: 2rem;
-  }
-
-  .teckStackHeader {
-    margin: 5px;
-  }
-
-  .teckStackContainer a {
-    display: inline-flex;
-    justify-content: center;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-
-    font-size: 40px;
-    text-decoration: none;
-  }
-
-  .aboutMeContainer {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    display: flex;
-    padding: 1rem;
-    padding-top: 1rem;
-    border-radius: 15px;
-  }
-
-  .aboutMeImageContainer {
-    width: 100%;
-    height: 100%;
-    border-radius: 5%;
-  }
-
-  .aboutMeHeaderText {
-    margin-top: 15px;
-  }
-
-  .aboutMeTextContainer {
-    display: column;
-    text-align: justify;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .portfolioHeader {
-    display: flex;
-
-    padding-left: 1rem;
-    padding-top: 1rem;
-  }
-
-  .portfolioTitle {
-    text-align: justify;
-    padding-left: 1rem;
-  }
-
-  .portfolioContainer {
-    /* margin: auto; */
-    display: flex;
-    align-items: center;
-    width: 100%;
-    display: flex;
-    padding: 1rem;
-    border-radius: 15px;
-    flex-direction: column;
-  }
-
-  .portfolioImageContainer {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    border-radius: 5%;
-  }
-
-  .projectHeaderText {
-    padding-top: 1rem;
-    justify-content: center;
-  }
-
-  .projectDescriptionTextContainer {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  /* ________________FOOTER CONTENT SECTION________________ */
-  .footerContainer {
-    text-align: center;
-    justify-content: center;
-    height: 150px;
-    padding: 1rem;
-
-    width: 100%;
-  }
-
-  .contactsHeader {
-    justify-content: center;
-    padding-left: 0rem;
-  }
-  .dontBeShyText {
-    justify-content: center;
-    padding-left: 0rem;
-  }
-
-  .email {
-    justify-content: center;
-    text-decoration: none;
-    font-weight: 800;
-    padding-left: 0rem;
-  }
-
-  .copyrightText {
-    flex-direction: column;
+    margin-top: 1rem;
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 320px) {
   .avatarContainer {
     align-items: center;
     margin: auto;
   }
 
   .avatar {
-    width: 70%;
-  }
-}
-
-@media (max-width: 768px) {
-  .mainContentContainer {
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-
-    margin-left: 1rem;
-    margin-right: 1rem;
+    width: 100%;
   }
 }

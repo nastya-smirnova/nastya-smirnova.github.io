@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
+import "../components/Header.css";
 
 export const Navigation = () => {
   return (

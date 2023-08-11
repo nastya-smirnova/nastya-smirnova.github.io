@@ -7,21 +7,11 @@ export const PreviewProjectButtons = ({ codeUrl, previewUrl }) => {
   return (
     <>
       <div className="buttonsContainer">
-        <a
-          href={codeUrl}
-          // href="https://github.com/nastya-smirnova/gallery-app"
-          target="_blank"
-          className="buttonsPreviewProject"
-        >
+        <a href={codeUrl} target="_blank" className="buttonsPreviewProject">
           Code &nbsp; <FontAwesomeIcon icon={faGithub} />
         </a>
 
-        <a
-          href={previewUrl}
-          // href="https://github.com/nastya-smirnova/gallery-app"
-          target="_blank"
-          className="buttonsPreviewProject"
-        >
+        <a href={previewUrl} target="_blank" className="buttonsPreviewProject">
           Live Demo &nbsp; <FontAwesomeIcon icon={faExternalLink} />
         </a>
       </div>

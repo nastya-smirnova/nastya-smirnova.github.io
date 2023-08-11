@@ -6,6 +6,7 @@ import {
   faJsSquare,
   faReact,
 } from "@fortawesome/free-brands-svg-icons";
+import "../components/TeckStack.css";
 
 export const TeckStack = () => {
   return (
