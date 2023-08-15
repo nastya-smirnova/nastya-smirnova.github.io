@@ -1,0 +1,122 @@
+.portfolioSectionContainer {
+  /* display: flex; */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolioHeader {
+  display: flex;
+
+  text-transform: var(--header-text-transform);
+  color: var(--header-text-color);
+  font-weight: var(--header-font-weight);
+  margin-left: 3rem;
+  padding-top: 1rem;
+}
+
+.portfolioTitle {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 3rem;
+}
+
+.projectContainer {
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+
+  background-color: var(--sections-background-color);
+  border-radius: 15px;
+  margin-bottom: 1rem;
+}
+
+.portfolioImageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 320px;
+  height: 220px;
+  border-radius: 5%;
+  border: var(--images-border-color);
+}
+
+.projectHeaderText {
+  margin-top: 0px;
+  text-transform: var(--header-text-transform);
+  color: var(--header-text-color);
+  font-weight: var(--header-font-weight);
+}
+
+.projectDescriptionTextContainer {
+  display: column;
+  text-align: justify;
+  margin-left: 2rem;
+}
+
+/* Maximum width */
+@media (max-width: 513px) {
+  .portfolioHeader {
+    margin-left: 2rem;
+  }
+
+  .portfolioTitle {
+    text-align: justify;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .projectContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 270px;
+    margin-top: 1rem;
+
+    border-radius: 15px;
+  }
+
+  .portfolioImageContainer {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+  }
+
+  .projectHeaderText {
+    margin-top: 15px;
+    justify-content: center;
+  }
+
+  .projectDescriptionTextContainer {
+    justify-content: center;
+    text-align: justify;
+    margin-left: 0px;
+  }
+}
+
+/* @media (max-width: 425px) {
+  .projectContainer {
+    max-width: 350px;
+    margin: auto;
+    margin-top: 1rem;
+    flex-direction: column;
+  }
+} */
+
+@media (max-width: 600px) {
+  .projectContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* max-width: 270px; */
+    max-width: 500px;
+    margin: auto;
+    margin-top: 1rem;
+  }
+  .portfolioImageContainer {
+    width: 100%;
+    height: 100%;
+  }
+  .projectHeaderText {
+    margin-top: 15px;
+  }
+}

@@ -1,0 +1,157 @@
+.greetContainer {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 60%;
+
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+
+.selfPresContainer {
+  margin-left: 3rem;
+
+  text-align: start;
+}
+
+.avatarContainer {
+  flex-wrap: wrap;
+}
+
+.avatar {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: var(--images-border-color);
+}
+
+/* Social Media Links */
+.socialMediaLinksContainer {
+  display: flex;
+  font-size: 35px;
+  margin-right: 15px;
+}
+
+.linkedin {
+  color: var(--linkedin-color);
+  margin-right: 15px;
+}
+
+.linkedin:hover {
+  font-size: 35px;
+  margin-right: 15px;
+  color: var(--linkedin-hover-color);
+  cursor: pointer;
+}
+
+.twitter {
+  color: var(--twitter-color);
+  margin-right: 15px;
+}
+
+.twitter:hover {
+  font-size: 35px;
+  margin-right: 15px;
+  color: var(--twitter-hover-color);
+  cursor: pointer;
+}
+
+.gitHub {
+  color: var(--github-color);
+  margin-right: 15px;
+}
+
+.gitHub:hover {
+  font-size: 35px;
+  margin-right: 15px;
+  color: var(--github-hover-color);
+  cursor: pointer;
+}
+
+.instagram {
+  color: var(--instagram-color);
+  margin-right: 15px;
+}
+
+.instagram:hover {
+  font-size: 35px;
+  margin-right: 15px;
+  color: var(--instagram-hover-color);
+  cursor: pointer;
+}
+
+.tiktok {
+  font-size: 35px;
+  color: var(--tiktok-color);
+}
+
+.tiktok:hover {
+  font-size: 35px;
+  color: var(--tiktok-hover-color);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .greetContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .selfPresContainer {
+    justify-content: center;
+    text-align: center;
+    margin-left: 0rem;
+  }
+
+  .headerGreeting {
+    font-size: larger;
+  }
+
+  .textGreeting {
+    font-size: medium;
+  }
+
+  .avatarContainer {
+    justify-content: center;
+  }
+
+  .avatar {
+    width: 100%;
+    height: 100%;
+  }
+
+  .socialMediaLinksContainer {
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    margin: 10px;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .avatarContainer {
+    align-items: center;
+  }
+
+  .avatar {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .avatarContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .avatar {
+    width: 80%;
+    height: 100%;
+  }
+}

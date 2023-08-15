@@ -1,0 +1,15 @@
+.usedToolsContainer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+  margin-left: -55px;
+}
+
+.usedTools {
+  display: flex;
+
+  font-size: 25px;
+  margin-left: 20px;
+  margin-top: 1rem;
+}

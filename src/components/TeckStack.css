@@ -1,0 +1,55 @@
+.teckStackContainer {
+  justify-content: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+.teckStackHeader {
+  margin: 5px;
+}
+
+.teckStackContainer a {
+  display: inline-flex;
+  justify-content: center;
+  margin-top: 15px;
+  margin-left: 40px;
+  margin-right: 40px;
+
+  font-size: 50px;
+  text-decoration: none;
+  color: var(--teckStack-ikons-color);
+  cursor: pointer;
+}
+
+/* Maximum width */
+@media (max-width: 513px) {
+  .teckStackContainer {
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .teckStackHeader {
+    margin: 5px;
+  }
+
+  .teckStackContainer a {
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    font-size: 40px;
+    text-decoration: none;
+    color: var(--teckStack-ikons-color);
+    cursor: pointer;
+  }
+}
+
+.teckStackContainer {
+  justify-content: center;
+  padding: 1rem;
+  padding-bottom: 5rem;
+}
