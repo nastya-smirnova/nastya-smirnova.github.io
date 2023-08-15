@@ -1,0 +1,22 @@
+.buttonsContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.buttonsPreviewProject {
+  display: flex;
+  /* justify-content: center; */
+  border: var(--preview-buttons-border);
+  text-decoration: none;
+  color: #000000;
+
+  border-radius: 12px;
+  padding: 8px;
+  margin: 5px;
+}
+
+.buttonsPreviewProject:hover {
+  background-color: var(--preview-buttons-background-hover-color);
+  color: var(--preview-buttons-color);
+  cursor: pointer;
+}

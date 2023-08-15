@@ -48,7 +48,7 @@
   box-shadow: inset 200px 0 0 0 #ffffff;
 }
 
-@media (max-width: 512px) {
+@media (max-width: 600px) {
   .headerContainer {
     height: 20vh;
     width: 100%;

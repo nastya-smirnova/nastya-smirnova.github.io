@@ -2,6 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
+import "../components/PreviewProjectButtons.css";
 
 export const PreviewProjectButtons = ({ codeUrl, previewUrl }) => {
   return (

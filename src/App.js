@@ -1,5 +1,4 @@
 import "./App.css";
-import "./MediaQuery.css";
 
 import Header from "./components/Header";
 

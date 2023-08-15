@@ -6,6 +6,7 @@ import {
   faJsSquare,
   faReact,
 } from "@fortawesome/free-brands-svg-icons";
+import "../components/UsedTools.css";
 
 export const UsedTools = () => {
   return (

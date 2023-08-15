@@ -46,7 +46,7 @@
   display: flex;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .footerContentContainer {
     justify-content: center;
     margin-left: 0rem;
@@ -61,7 +61,7 @@
   .email {
     justify-content: center;
 
-    font-weight: 800;
+    font-weight: 700;
   }
 
   .copyrightText {
