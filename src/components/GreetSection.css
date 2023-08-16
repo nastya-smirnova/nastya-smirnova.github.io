@@ -10,11 +10,11 @@
 
 .selfPresContainer {
   margin-left: 3rem;
-
   text-align: start;
 }
 
 .avatarContainer {
+  display: flex;
   flex-wrap: wrap;
 }
 
