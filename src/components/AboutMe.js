@@ -1,5 +1,5 @@
 import React from "react";
-import workspaceImg from "../images/workspace.png";
+import workspaceImg from "../images/workspace.jpg";
 import "../components/AboutMe.css";
 
 export const AboutMe = () => {

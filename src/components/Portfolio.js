@@ -1,8 +1,8 @@
 import React from "react";
 import "../components/Portfolio.css";
 
-import galleryAppImg from "../images/galleryApp.png";
-import landingPageImg from "../images/landingPage.png";
+import galleryAppImg from "../images/galleryApp.jpg";
+import landingPageImg from "../images/landingPage.jpg";
 
 import UsedTools from "../components/UsedTools";
 import PreviewProjectButtons from "../components/PreviewProjectButtons";
